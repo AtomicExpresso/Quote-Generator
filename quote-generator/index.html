@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quote Generator</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  
+<div class="quote-box">
+  <h2>Quote Generator</h2>
+  <blockquote id="quote">Quote text</blockquote>
+  <span id="author">Quote author</span>
+  <div class="buttons">
+    <button onclick="getquote(api_url)">New quote<i class='bx bxs-comment-add'></i></button>
+    <button onclick="copyQuote()">Copy<i class='bx bx-copy-alt'></i></button>
+    <button onclick="tweet()">Tweet<i class='bx bxl-twitter'></i></button>
+  </div>
+  <div class="credits">
+    <hr>
+    <a href="https://github.com/lukePeavey/quotable">Generated using Quote api</a>
+    <a href="https://github.com/AtomicExpresso">My github page</a>
+  </div>
+</div>
+
+  <script src="app.js"></script>
+</body>
+</html>
