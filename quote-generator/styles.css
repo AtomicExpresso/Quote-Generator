@@ -11,7 +11,7 @@ body{
   background: #bbc6fa;
 }
 
-.quote-box{
+.quote-content{
   background: #fff;
   width: 760px;
   position: absolute;
@@ -24,13 +24,13 @@ body{
   box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.15);
 }
 
-.quote-box h2{ /*mkes blue underline go under title*/
+.quote-content h2{ /*mkes blue underline go under title*/
   font-size: 32px;
   margin-bottom: 40px;
   position: relative;
 }
 
-.quote-box h2::after{
+.quote-content h2::after{
   content: '';
   width: 75px;
   height: 3px;
@@ -42,25 +42,25 @@ body{
   transform: translateX(-50%);
 }
 
-.quote-box blockquote{
+.quote-content blockquote{
   font-size: 26px;
   min-height: 110px;
 }
 
-.quote-box blockquote::before,
-.quote-box blockquote::after{
+.quote-content blockquote::before,
+.quote-content blockquote::after{
   content: '"'; /*adds double quote to text*/
 
 }
 
-.quote-box span{
+.quote-content span{
   display: block;
   margin-top: 10px;
   float: right;
   position: relative;
 }
 
-.quote-box span::before{
+.quote-content span::before{
   content: '';
   width: 20px;
   height: 2px;
@@ -77,7 +77,7 @@ body{
   justify-content: center;
 }
 
-.quote-box button{
+.quote-content button{
   background: rgb(23, 124, 229);
   color: #fff;
   border-radius: 25px;
@@ -92,22 +92,22 @@ body{
   transition: 0.5s;
 }
 
-.quote-box button:hover{
+.quote-content button:hover{
   scale: 1.1;
   opacity: 0.8;
 }
 
-.quote-box button:nth-child(2){ /*second button*/
+.quote-content button:nth-child(2){ /*second button*/
   background: rgb(19, 192, 0);
   color: #ffffff;
 }
 
-.quote-box button:nth-child(3){ /*tweet button*/
+.quote-content button:nth-child(3){ /*tweet button*/
   background: rgb(81, 159, 255);
   color: #ffffff;
 }
 
-.quote-box button i{
+.quote-content button i{
   padding-left: 5px;
 }
 
